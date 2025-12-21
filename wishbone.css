@@ -1,0 +1,1151 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: Poppins,sans-serif;
+    font-weight: 400;
+}
+:root{
+    --colors01:#1B1A1A;
+    --colors02:#ECE7E4;
+    --colors03:#403E3B;
+    --colors04:#645C55;
+    --colors05:#FFF;
+    --colors06:#CEC4BC;
+    --colors07:#F7F7F7;
+}
+@font-face {
+    font-family:"Poppins" ;
+    src: url("./fonts/Poppins-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container{
+    max-width: 100%;
+    min-height: 6411px;
+    border: 1px solid green;
+}
+
+/* Блок навигации */
+
+.header{
+    max-width: 83.3vw;
+    min-height: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 32px;
+}
+.navigation{
+    width: 584.81px;
+    height: 50px;
+    padding: 0 15px;
+}
+.list-navigation{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 32px;
+}
+li{
+    font-size: 0.9375rem;
+    line-height: 24px;
+    color: var(--colors01);
+}
+li:last-child{
+    width: 155px;
+    height: 46px;
+    background-color:var(--colors01);
+    color: var(--colors05);
+    border-radius: 14px;
+    text-align: center;
+    line-height: 46px;
+}
+
+/* Второй блок */
+/* Поработать над адаптивностью блока */
+.second-block{
+    max-width: 100%;
+    min-height: 720px;
+    border: 1px solid orangered;
+    background-color: var(--colors02);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second--blok__description{
+    width: 41.667vw;
+    aspect-ratio: 300/283;
+    border: 1px solid orangered;
+    position: relative;
+    margin-left: 60px;
+}
+.description--name{
+    width: 190px;
+    min-height: 20px;
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    color:var(--colors04);
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid orangered;
+}
+.description--title{
+    width: 417px;
+    min-height: 212px;
+    color:var(--colors01);
+    font-size:2rem;
+    line-height:4.4rem;
+    letter-spacing: 0%;
+    text-align: left;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    border: 1px solid orangered;
+}
+.description--article{
+    width: 31.81rem;
+    height: 7.5rem;
+    color: var(--colors03);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0%;
+    text-align: left;
+    position: absolute;
+    top: 330px;
+    left: 40px;
+    border: 1px solid orangered;
+}
+.description--button{
+    width: 8.31rem;
+    height: 2.88rem;
+    color:var(--colors01);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.03rem;
+    /* text-align: left; */
+    border-radius: 14px;
+    box-shadow: 0rem 0rem 0rem 0rem rgba(27, 26, 26, 1);
+    text-align: center;
+    line-height:2.88rem ;
+    position: absolute;
+    top: 480px;
+    left:45px ;
+    border: 1px solid orangered;
+}
+.second--block__image{
+    width: 50vw;
+    aspect-ratio: 1/1;
+    background-image: url("./images/image-01.jpg");
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Третий блок */
+
+.third-block{
+    width: 48rem;
+    height: 36.38rem;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+.third-block__title{
+    width: 8.38rem;
+    height: 2.38rem;
+    color:var(--colors03);
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.38rem;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top:-4px ;
+}
+.third-block__text{
+    width: 31.33rem;
+    height: 36.38rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.text_1{
+    width: 30.81rem;
+    height: 9rem;
+    color: var(--colors03);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.third-block__text > *{
+    padding-left:.34px;
+}
+.third-block__author{
+    width: 31.33rem;
+    height: 6.25rem;
+    padding: 8px 0 8px .34px;
+    display: flex;
+    align-items: center;
+}
+.author-image{
+   width: 5.25rem;
+   height: 5.25rem;
+   background-image: url("./images/image-08.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position:center;
+   outline: 0.19rem solid var(--colors06);
+   outline-offset: -0.19rem;
+   border-radius: 50px;
+   background-color: #ccc;
+}
+.third-block__author--name{
+    width:12.25rem ;
+    height: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:1.896rem;
+}
+.author--name{
+    width: 8.5rem;
+    min-height: 1.63rem;
+    color: var(--colors01);
+    font-size: 1.06rem;
+    line-height: 1.63rem;
+    text-align: left;
+}
+.author--position{
+    width: 6.44rem;
+    min-height: 0.88rem;
+    color:var(--colors04);
+    font-size: 0.88rem;
+    line-height: 0.88rem;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top:-0.2rem;
+}
+
+/* Четвертый блок */
+
+.four-block{
+    max-width:100%;
+    /* min-height: 37.5rem; */
+    aspect-ratio: 12/5;
+    background-image: url("./images/image-02.jpg");
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.four-block__text{
+    max-width: 18.75rem;
+    height: 100%;
+    position: absolute;
+    left: 67.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid orangered;
+}
+.text-title{
+    /* Reeding House */
+    max-width: 8.56rem;
+    min-height: 1.25rem;
+    color: var(--colors03);
+    font-size: 0.88rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.13rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+.text-description{
+    /* Lorem ipsum dolor sit amet, dolor sit amet dolor sit amet. */
+    max-width: 17.81rem;
+    min-height: 3rem;
+    color:var(--colors04);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    /* letter-spacing: 0%; */
+    text-align: left;
+}
+
+/* Пятый блок */
+
+.five-block{
+    max-width: 83.33vw;
+    aspect-ratio: 400/127;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:100px;
+    border: 1px solid orangered;
+}
+.five-block-title{
+    max-width: 50%;
+    aspect-ratio: 300/41;
+    /* border: 1px solid orangered; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title--process{
+    max-width:20.33%;
+    min-height: 20px;
+    /* border: 1px solid orangered; */
+    text-align: center;
+    color: var(--colors04);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing:.125rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.title--description{
+    max-width: 78%;
+    min-height: 42px;
+    /* border: 1px solid orangered; */
+    padding: 13px 0 7px 0;
+    text-align: center;
+    color: rgba(27, 26, 26, 1);
+    font-size: 2.44rem;
+    line-height: 2.625rem;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.five-block-description{
+  max-width:97.33%;
+  min-height: 259px;
+  margin:47px 16px 0 16px;
+  /* border: 1px solid orangered; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.description-block-sketching,
+.description-block-finalizing,
+.description-block-building{
+    width:378.66px;
+    height: 259px;
+    /* border: 1px solid orangered; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.description-block-sketching > .block--image{
+    width: 117px;
+    min-height: 102px;
+    background-image: url("./icons/Sketching-Icon.jpg");
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    /* border: 1px solid orangered; */
+}
+.description-block-sketching > .block--title{
+    width: 89px;
+    min-height: 26px;
+    color: var(--colors03);
+    font-size: 1.125rem;
+    line-height:1.625rem;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 15px 144.66px 0 145px;
+    /* border: 1px solid orangered; */
+}
+.description-block-sketching >.block--descripton{
+    width: 294px;
+    min-height: 96px;
+    color:var(--colors04);
+    font-size: .94rem;
+    line-height: 1.5rem;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 10px 42.66px 10px 42px;
+    /* border: 1px solid orangered; */
+}
+/* ============================================ */
+
+.description-block-finalizing > .block--image{
+    width:117px;
+    height: 102px;
+    background-image: url("./icons/Finalizing-Icon.jpg");
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* border:1px solid orangered */
+}
+.description-block-finalizing > .block--title{
+    width: 80px;
+    height: 26px;
+    color: var(--colors03);
+    font-size: 1.063rem;
+    line-height: 1.625rem;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 15px 149.33px 0 149.33px;
+    /* border: 1px solid orangered; */
+}
+.description-block-finalizing > .block--descripton{
+    width:292px ;
+    height:72px;
+    color: var(--colors04);
+    font-size: 1rem;
+    line-height:1.5rem;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 10px 43.33px 34px 43.33px;
+    /* border: 1px solid orangered; */
+}
+/* ============================================ */
+
+.description-block-building > .block--image{
+    width:117px;
+    height: 102px;
+    background-image: url("./icons/Building-Icon.jpg");
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* border: 1px solid orangered; */
+}
+.description-block-building > .block--title{
+    width: 69px;
+    min-height: 26px;
+    color:var(--colors03);
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin:15px 155px 0 154.66px; ;
+    /* border: 1px solid orangered; */
+}
+.description-block-building > .block--descripton{
+    width: 285px;
+    height: 96px;
+    color: var(--colors04);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 10px 47px 10px 46.66px;
+    /* border: 1px solid orangered; */
+}
+
+/* Шестой блок */
+
+.six-block{
+    max-width:100%;
+    aspect-ratio: 12/5;
+    background-image: url("./images/image-03.jpg");
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border: 1px solid orangered;
+}
+.six-block--text{
+    width: 20.83%;
+    aspect-ratio: 1/2;
+    position: absolute;
+    left: 75%;
+    border: 1px solid orangered;
+}
+.six-block--text__title{
+    width: 68.95%;
+    aspect-ratio: 41/4;
+    position: absolute;
+    bottom:314px;
+    color: var(--colors03);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing:0.125rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+.six-block--text__description{
+    width: 95.85%;
+    aspect-ratio: 95/16;
+    position: absolute;
+    bottom:266px;
+    color: var(--colors04);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+/* Седьмой блок */
+
+.seven-block{
+    width: 100%;
+    aspect-ratio: 144/41;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--colors03) ;
+}
+.seven-block--clients{
+    width:81.11%;
+    aspect-ratio: 584/145;
+    display: flex;
+    align-items: center;
+}
+.seven-block--clients__description{
+    width:39.38% ;
+    aspect-ratio: 23/8;
+    display: flex;
+    flex-direction: column;
+}
+.clients__description--logo{
+    width: 129px;
+    min-height: 33.33%;
+    padding-top: 10px;
+    color: var(--colors02);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.125rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+.clients__description--title{
+    width: 299px;
+    min-height: 33.33%;
+    margin-top: -4px;
+    color:var(--colors05);
+    font-size:2rem;
+    line-height:2.375rem;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.clients__description--description{
+    width: 451px;
+    min-height: 33.33%;
+    /* padding-top: 14px; */
+    color: var(--colors02);
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.seven-block--clients__icons{
+    width: 36.98%;
+    aspect-ratio:216/145 ;
+    margin-left: 132px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.clients__icons:first-child{
+    width: 29.85%;
+    aspect-ratio:64/15;
+    background-image: url("./images/hill-hayes.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 64px 96px 128px 40px;
+}
+.clients__icons:nth-child(2){
+    width: 29.85%;
+    /* Несоответствие сторон.Не соответствие с макетом*/
+    aspect-ratio: 64/39; 
+    /* min-height: 78px; */
+    background-image: url("./images/riksgransen.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    margin: 40px 0 96px 0;
+    border: 1px solid orangered;
+}
+.clients__icons:nth-child(3){
+    width: 29.85%;
+    aspect-ratio: 32/5;
+    background-image: url("./images/studio-cai.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 96px 48px 40px;
+}
+.clients__icons:last-child{
+    width: 29.85%;
+    aspect-ratio: 32/9;
+    background-image: url("./images/Combined-Shape.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -8px;
+    margin-bottom: 40px;
+}
+
+/* Восьмой блок */
+
+.eight-block{
+    max-width:100%;
+    aspect-ratio: 12/5;
+    background-image: url("./images/image-04.jpg");
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border: 1px solid orangered;
+}
+.eight-block--text{
+    width: 20.83%;
+    aspect-ratio: 1/2;
+    position: absolute;
+    left: 4.17%;
+}
+.eight-block--text__title{
+    max-width: 74.33%;
+    min-height: 20px;
+    color: var(--colors03);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.125rem;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 266px;
+
+}
+.eight-block--text__description{
+    max-width: 95%;
+    min-height: 48px;
+    color: var(--colors04);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+/* Девятый блок */
+
+.nine-block{
+    max-width: 100%;
+    aspect-ratio: 80/51;
+    background-color: var(--colors07);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid orangered; */
+}
+.nine-block--projects{
+    width: 83.33%;
+    aspect-ratio: 600/349;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid orangered; */
+}
+/* ================================ */
+.nine-block--projects__text{
+    width: 50%;
+    aspect-ratio: 75/14;
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    /* margin-top: -7px; */
+    /* border: 1px solid orangered; */
+}
+.projects__text--title{
+    width: 58.5%;
+    aspect-ratio: 117/14;
+    margin-top: -7px;
+    color:var(--colors01);
+    font-size: 2.44rem;
+    line-height: 2.63rem;
+    letter-spacing: 0%;
+    text-align: left;
+    /* border: 1px solid orangered; */
+}
+.projects__text--description{
+    /* Несоответствие размеров с макетом */
+    width: 97.76%;
+    /* width: 581px;
+    min-height: 60px; */
+    aspect-ratio: 581/60;
+    color: var(--colors04);
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 15px 0 2px 0;
+    /* border: 1px solid orangered; */
+}
+/* ============================================= */
+.block--projects__image{
+    width: 97.33%;
+    aspect-ratio: 292/115;
+    /* border: 1px solid orangered; */
+    margin: 40px 16px 40px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.projects__image{
+    width: 375px;
+    /* height: 456px; */
+    aspect-ratio: 125/152;
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 2px;
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid var(--colors07);
+    border-radius: 12px;
+    /* border: 1px solid orangered; */
+}
+.projects__image:nth-child(1){
+    background-image: url("./images/image-05.jpg");
+}
+.projects__image:nth-child(2){
+    background-image: url("./images/image-06.jpg");
+    
+}
+.projects__image:nth-child(3){
+    background-image: url("./images/image-07.jpg");
+}
+
+/* == Средняя картинка == */
+
+.projects__image--text{
+    width: 207px;
+    min-height: 50px;
+    position: absolute;
+    left: 39.67px;
+    top: 40px;
+    /* border: 1px solid orangered; */
+}
+.projects__image--text--title{
+    width: 207px;
+    min-height: 20px;
+    color: var(--colors04);
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: 0.33px;
+    /* border: 1px solid orangered; */
+}
+.projects__image--text--description{
+    width: 207px;
+    height: 30px;
+    /* border: 1px solid orangered; */
+    color: var(--colors03);
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: .33px;
+    margin-bottom: 2px;
+}
+.projects__image--button{
+    width: 133px;
+    min-height: 46px;
+    background-color:var(--colors01);
+    border: none;
+    padding: 11px 20px;
+    border-radius: 14px;
+    position: absolute;
+    left: 45px;
+    bottom: 40px;
+    color: var(--colors05);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    text-align: left;
+}
+
+.block--projects__ancor{
+    width: 180px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* border: 1px solid orangered; */
+}
+.projects__ancor--text{
+    color:var(--colors01);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+
+/* Десятый блок */
+
+.ten-block{
+    max-width: 100%;
+    aspect-ratio: 90/37;
+    /* border: 1px solid orangered; */
+}
+.ten-block__context{
+    width: 81.11%;
+    aspect-ratio: 146/49;
+    margin: 100px 136px;
+    display: flex;
+    /* column-gap: 16.02px; */
+    justify-content: space-between;
+    /* border: 1px solid orangered; */
+}
+
+/* ===== Описание ===== */
+.ten-block__context--text{
+    width: 32.36%;
+    aspect-ratio: 27/28;
+    /* border: 1px solid orangered; */
+}
+.context--text__title{
+    width: 63.5%;
+    aspect-ratio:120/19;
+    margin-top: -4px;
+    color: var(--colors03);
+    font-size:2rem;
+    line-height:2.375rem;
+    text-align: left;
+    /* border: 1px solid orangered; */
+
+}
+.context--text__description{
+    width: 94.71%;
+    aspect-ratio: 179/36;
+    margin-top: 14px;
+    color: var(--colors04);
+    font-size: 0.94rem;
+    line-height: 1.5rem;
+    letter-spacing: 0%;
+    text-align: left;
+    /* border: 1px solid orangered; */
+}
+.context--text__button{
+    width: 32.01%;
+    aspect-ratio: 121/46;
+    margin:30px 0 0 5px;
+    border: none;
+    border-radius: 0.875rem;
+    color: var(--colors01);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.4px;
+    text-align:center;
+    background-color:inherit;
+}
+/* ===== Команда ===== */
+.ten-block__context--team{ 
+    width:66.21%;
+    /* aspect-ratio: 773/392; */
+    min-height: 392px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid orangered; */
+}
+/* ========================= */
+.team--card{
+    height: 100px;
+    display: flex;
+    /* border: 1px solid orangered; */
+}
+.team--card__image{
+    width: 84px;
+    height: 84px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    outline: 0.19rem solid var(--colors06);
+    outline-offset: -0.19rem;
+    margin:8px 0 8px 0.33px;
+}
+.card--name{
+    height: 26px;
+    color: var(--colors01);
+    font-size: 1.063rem;
+    line-height: 1.625rem;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.card--position{
+    height: 14px;
+    color: var(--colors04);
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    letter-spacing: 0%;
+    text-align: left;
+}
+/* ======================= */
+
+.team--card:nth-child(1){
+    width:36.22%;
+}
+
+.team--card:nth-child(1)>.team--card__image{
+    background-image: url("./images/image-08.jpg");
+}
+.team--card:nth-child(1)>.team--card__name{
+    width:70%;
+    /* border:1px solid orangered */
+}
+.team--card:nth-child(1)>.team--card__name>.card--name{
+/* Stephen Collier */
+    width: 136px;
+    margin: 30px 29.67px 0 30.33px;
+    /* border: 1px solid orangered; */
+}
+.team--card:nth-child(1)>.team--card__name>.card--position{
+    /* Senior Partner */
+    width: 103px;
+    margin: -3px 62.67px 33px 30.33px;
+    /* border: 1px solid orangered; */
+}
+
+/* ============================ */
+
+.team--card:nth-child(2){
+    width: 33.38%;
+    margin-left: 114.67px;
+}
+.team--card:nth-child(2)>.team--card__image{
+    background-image: url("./images/image-09.jpg");
+}
+.team--card:nth-child(2)>.team--card__name{
+    width: 67.44%;
+    /* border: 1px solid orangered; */
+}
+.team--card:nth-child(2)>.team--card__name>.card--name{
+    width: 65.52%;
+    margin: 30px 30.34px 0 29.66px;
+    /* border: 1px solid orangered; */
+}
+.team--card:nth-child(2)>.team--card__name>.card--position{
+    width: 41.95%;
+    margin: -3px 71.34px 33px 29.66px;
+    /* border: 1px solid orangered; */
+}
+
+/* ============================= */
+
+.team--card:nth-child(3){
+    width: 35.58%;
+    margin: 36px 0 36px 0;
+}
+.team--card:nth-child(3)>.team--card__image{
+    background-image: url("./images/image-10.jpg");
+}
+.team--card:nth-child(3)>.team--card__name{
+    width: 69.45%;
+}
+.team--card:nth-child(3)>.team--card__name>.card--name{
+    width: 64.92%;
+    margin: 30px 36.67px 0 30.33px;
+}
+.team--card:nth-child(3)>.team--card__name>.card--position{
+    width: 68.59%;
+    margin: -3px 29.67px 33px 30.33px;
+}
+/* ========================================== */
+
+.team--card:nth-child(4){
+    width: 31.95%;
+    margin: 36px 0 36px 114.67px;
+}
+.team--card:nth-child(4)>.team--card__image{
+    background-image: url("./images/image-11.jpg");
+}
+.team--card:nth-child(4)>.team--card__name{
+    width: 66%;
+}
+.team--card:nth-child(4)>.team--card__name>.card--name{
+    width: 57.67%;
+    margin: 30px 39.34px 0 29.66px;
+}
+.team--card:nth-child(4)>.team--card__name>.card--position{
+    width: 63.19%;
+    margin: -3px 30.34px 33px 29.66px;
+}
+/* =========================================== */
+
+.team--card:nth-child(5){
+    width: 29.88%;
+    margin-bottom: 20px;
+}
+.team--card:nth-child(5)>.team--card__image{
+     background-image: url("./images/image-12.jpg");
+}
+.team--card:nth-child(5)>.team--card__name{
+    width: 63.64%;
+}
+.team--card:nth-child(5)>.team--card__name>.card--name{
+    width: 59.18%;
+    margin: 30px 29.67px 0 30.33px;
+}
+.team--card:nth-child(5)>.team--card__name>.card--position{
+    width: 36.73%;
+    margin: -3px 62.67px 33px 30.33px;
+}
+
+/* Одиннадцатый блок */
+
+.eleven-block{
+    width: 100%;
+    aspect-ratio: 720/157;
+    background-color: var(--colors06);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid orangered; */
+}
+.eleven-block__content{
+    width: 81.325%;
+    aspect-ratio: 584/57;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.eleven-block__content--text{
+    width: 49.32%;
+    aspect-ratio: 96/19;
+}
+.content--text__title{
+    width: 21.53%;
+    min-height: 20px;
+    color: var(--colors04);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.125rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+.content--text__description{
+    width: 99.01%;
+    min-height: 84px;
+    color: var(--colors01);
+    font-size: 2.5rem;
+    line-height: 2.625rem;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: -8px;
+}
+.eleven-block__content--button{
+    width: 12.41%;
+    min-height: 46px;
+}
+.content--button{
+    width: 72.41%;
+    min-height: 24px;
+    background-color: inherit;
+    border: none;
+    margin: 11px 20px;
+    color:var(--colors01);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.4px;
+    text-align: left;
+}
+/* Двенадцатый блок(Футер) */
+
+.footer{
+    width: 100%;
+    aspect-ratio: 120/17;
+    /* border: 1px solid orangered; */
+}
+.footer-context{
+    width: 81.11%;
+    min-height: 84px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid orangered; */
+}
+.context--description{
+    width: 59.45%;
+    min-height: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid orangered; */
+}
+/* Картинка поработать над адаптив и визуализация */
+.logo-footer{
+    width: 256px;
+    min-height: 22px;
+    /* border: 1px solid orangered; */
+    color: var(--colors01);
+    margin-top: 2px;
+}
+.context--description__text{
+    max-width: 100%;
+    min-height: 40px;
+    display: flex;
+    flex-direction: column;
+    color: var(--colors04);
+    /* border: 1px solid orangered; */
+}
+.text--block{
+    min-height: 20px;
+    display: flex;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.text--block:nth-child(1)>.text:nth-child(1){
+    max-width: 12.24%;
+    /* border: 1px solid orangered; */
+}
+.text--block:nth-child(1)>.text:nth-child(2){
+    max-width: 8.785%;
+    /* border: 1px solid orangered; */
+}
+.text--block:nth-child(1)>.text:nth-child(3),
+.text--block:nth-child(2)>.text:nth-child(3){
+    max-width: 0.437%;
+    /* border: 1px solid orangered; */
+}
+.text--block:nth-child(2)>.text:nth-child(1){
+    max-width: 43.5%; /* Несоответствие с размерами макета */
+    /* border: 1px solid orangered; */
+}
+.text--block:nth-child(2)>.text:nth-child(2){
+    max-width: 9.309%;
+    /* border: 1px solid orangered; */
+}
+.context--icons{
+    width: 9.6%;
+    min-height: 24.61px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+a{
+    height: 24px;
+}
+/* 1.Отредактировать ссылки
+   2.Коррекция размеров с макетом */
